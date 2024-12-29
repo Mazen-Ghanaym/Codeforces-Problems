@@ -1,0 +1,34 @@
+\begin{problem}{LPN}{standard input}{standard output}{1 second}{256 megabytes}
+
+$Mazen$ challenged $Mahmoud$ with a problem. Here's the problem:
+
+You are given a number $a$ consisting of $n$ digits from $0$ to $9$. You can perform the following operation at most $k$ times:
+
+For each operation, you can change any digit in $a$ to any other digit.
+
+Your task is to find the largest palindromic number possible.
+
+For example, if $a$ = $0455$ and $k$ = $2$, after $2$ operations, $a$ could be {$0550$, $5445$, $0440$, $5555$}. The largest palindromic number would be $a$ = $5555$.
+
+Can you assist $Mahmoud$ in solving this problem?
+
+Note: $a$ can have leading zeros.
+
+\InputFile
+The first line contains two integers $n$ and $k$ $(1\le n\le2\times10^5)$,$(0 \le k \le 2\times10^5)$--- the number of digits in $a$ and the number of operations.
+
+The second line contains a string of $n$ characters, denoting the number $a$. Each character is a decimal digit from $0$ to $9$.
+
+\OutputFile
+Output the largest palindromic number achievable in at most $k$ operations. If no palindromic number is achievable, output $-1$.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\end{example}
+
+\end{problem}
+
