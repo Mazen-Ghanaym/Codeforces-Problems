@@ -1,0 +1,35 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>LPS</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">LPS</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>You are given a string $$$S$$$ of $$$n$$$ Latin characters, and an array $$$A$$$ of $$$n$$$ integers. Each element has a value of $$$A_i$$$. Find the length of the longest good substring.</P><P>A substring $$$S[l, r]$$$ $$$(1 &le; l &le; r &le; n)$$$ is considered good if both of the conditions below are true:</P><P>$$$1.$$$ $$$S[l, r]$$$ is a palindrome ($$$S_{l+i} = S_{r&minus;i}$$$ for all $$$0 &le; i &le; r &minus; l$$$)</P><P>$$$2.$$$ $$$A_l |A_l +1|...|A_r &minus;1|A_r $$$ = $$$\sum_{i = l}^r A_i$$$ , where $$$|$$$ is the bitwise OR operator. Note: $$$x|y$$$ means $$$x$$$ bitwise or $$$y$$$.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains $$$n$$$ $$$(1 &le; n &le; 3 \cdot 10^5)$$$.</P><P>The second line contains a string $$$S$$$ of length $$$n$$$.</P><P>The last line contains $$$n$$$ space-separated integers $$$A_1, A_2, ..., A_n$$$ $$$(1 &le; A_i &le; 10^9)$$$ &mdash; the array $$$A$$$.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>Print one integer: The maximum length of a substring that fulfills both of the conditions above.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="4
+aaaa
+1 2 3 4
+">
+<DIV class="test-example-line test-example-line-even test-example-line-1">4</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">aaaa</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 2 3 4</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="1
+a
+10
+">
+<DIV class="test-example-line test-example-line-even test-example-line-1">1</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">a</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">10</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+1
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="6
+abbabb
+1 2 3 4 8 7
+">
+<DIV class="test-example-line test-example-line-even test-example-line-1">6</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">abbabb</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 2 3 4 8 7</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+3
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

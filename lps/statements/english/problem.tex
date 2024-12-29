@@ -1,0 +1,35 @@
+\begin{problem}{LPS}{standard input}{standard output}{1 second}{256 megabytes}
+
+You are given a string $S$ of $n$ Latin characters, and an array $A$ of $n$ integers. Each element has a value of $A_i$. Find the length of the longest good substring.
+
+A substring $S[l, r]$ $(1 ≤ l ≤ r ≤ n)$ is considered good if both of the conditions below are true:
+
+$1.$ $S[l, r]$ is a palindrome ($S_{l+i} = S_{r−i}$ for all $0 ≤ i ≤ r − l$)
+
+
+$2.$ $A_l
+|A_l +1|...|A_r −1|A_r $ = $\sum_{i = l}^r A_i$
+, where $|$ is the bitwise OR operator.
+Note: $x|y$ means $x$ bitwise or $y$.
+
+\InputFile
+The first line contains $n$ $(1 ≤ n ≤ 3 \cdot 10^5)$.
+
+The second line contains a string $S$ of length $n$.
+
+The last line contains $n$ space-separated integers $A_1, A_2, ..., A_n$ $(1 ≤ A_i ≤ 10^9)$ --- the array $A$.
+
+\OutputFile
+Print one integer:
+The maximum length of a substring that fulfills both of the conditions above.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\end{example}
+
+\end{problem}
+

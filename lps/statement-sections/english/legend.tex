@@ -1,0 +1,11 @@
+You are given a string $S$ of $n$ Latin characters, and an array $A$ of $n$ integers. Each element has a value of $A_i$. Find the length of the longest good substring.
+
+A substring $S[l, r]$ $(1 ≤ l ≤ r ≤ n)$ is considered good if both of the conditions below are true:
+
+$1.$ $S[l, r]$ is a palindrome ($S_{l+i} = S_{r−i}$ for all $0 ≤ i ≤ r − l$)
+
+
+$2.$ $A_l
+|A_l +1|...|A_r −1|A_r $ = $\sum_{i = l}^r A_i$
+, where $|$ is the bitwise OR operator.
+Note: $x|y$ means $x$ bitwise or $y$.
