@@ -1,0 +1,36 @@
+\begin{problem}{Donors}{standard input}{standard output}{1 second}{256 megabytes}
+
+The Egyptian Red Crescent has a list with $n$ donors and each donor is represented by two variables $c$ is the donor's code and $d$ is the amount of money this donor donates.
+
+Egyptian Red Crescent has $q$ queries. 
+
+Each query is represented by two variables $l$ and $r$ and you asked to get the value of ${\sum_{i = l}^r f(i)}$ where $f(x)$ is the amount of money the donor with code $x$ donates.
+
+$Note$ Each donor can donate many times.
+
+\InputFile
+The first line contains $n$ and $q$ $(1 \le n,q \le 10^5)$-- the number of donors and queries.
+
+Each line of $n$ lines contains $c$ and $d$ -- $(1 \le c \le 10^5)$, $(1\le d\le 10^9)$ -- donor's code and the amount of money he donates.
+
+After that $q$ lines each line contains $l$ and $r$ $(1 \le l,r \le 10^5)$.
+
+\OutputFile
+For each query output the value described above.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+$f(1) = 25$\\\\
+$f(2) = 5$\\\\
+$f(3) = 0$\\\\
+$f(4) = 0$\\\\
+$f(5) = 14$\\\\
+$f(6) = 4$
+
+\end{problem}
+

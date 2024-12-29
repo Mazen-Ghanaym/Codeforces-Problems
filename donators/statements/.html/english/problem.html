@@ -1,0 +1,34 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Donors</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Donors</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>The Egyptian Red Crescent has a list with $$$n$$$ donors and each donor is represented by two variables $$$c$$$ is the donor's code and $$$d$$$ is the amount of money this donor donates.</P><P>Egyptian Red Crescent has $$$q$$$ queries. </P><P>Each query is represented by two variables $$$l$$$ and $$$r$$$ and you asked to get the value of $$${\sum_{i = l}^r f(i)}$$$ where $$$f(x)$$$ is the amount of money the donor with code $$$x$$$ donates.</P><P>$$$Note$$$ Each donor can donate many times.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains $$$n$$$ and $$$q$$$ $$$(1 \le n,q \le 10^5)$$$&ndash; the number of donors and queries.</P><P>Each line of $$$n$$$ lines contains $$$c$$$ and $$$d$$$ &ndash; $$$(1 \le c \le 10^5)$$$, $$$(1\le d\le 10^9)$$$ &ndash; donor's code and the amount of money he donates.</P><P>After that $$$q$$$ lines each line contains $$$l$$$ and $$$r$$$ $$$(1 \le l,r \le 10^5)$$$.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each query output the value described above.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="6 4
+1 20
+5 10
+2 5
+1 5
+6 4
+5 4
+1 6
+1 3
+3 4
+3 6
+">
+<DIV class="test-example-line test-example-line-even test-example-line-1">6 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 20</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">5 10</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">2 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">6 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">5 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 6</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">1 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">3 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">3 6</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+48
+30
+0
+18
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>$$$f(1) = 25$$$</P><P> $$$f(2) = 5$$$</P><P> $$$f(3) = 0$$$</P><P> $$$f(4) = 0$$$</P><P> $$$f(5) = 14$$$</P><P> $$$f(6) = 4$$$</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
