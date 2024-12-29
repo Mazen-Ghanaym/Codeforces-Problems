@@ -1,0 +1,32 @@
+\begin{problem}{Equalize (hard version)}{standard input}{standard output}{1 second}{256 megabytes}
+
+You are given an array $a$ of $n$ integers.
+
+Consider positive integers $b_1$$,\dots,$$b_n$ that satisfy that for any $i,j$ such that $(1\le i < j \le n)$, $a_i \times b_i$=$a_j \times b_j$.
+
+Find the minimum possible value of 
+$b_1 +\dots+ b_n$ for such $b_1,\dots,b_n$.
+
+Since the answer can be enormous, print the sum modulo $(10^9+7)$.
+
+\InputFile
+First line contains $n$ $(1\le n\le 10^4 )$ -- number of elements.
+
+Second line contains $n$ integers $a_1,\dots,a_n$ $(1\le a_i \le 10^6)$ 
+
+\OutputFile
+Output one line contains the minimum value for $b_1 +\dots+ b_n$ that satisfies the conditions above modulo $(10^9+7)$
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+The minimum possible value for this test case is $6,3,2$
+
+such that $1\times 6$ = $2 \times 3$ = $3\times 2$. So the answer is $6+2+3=11$.
+
+\end{problem}
+
