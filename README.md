@@ -10,3 +10,5 @@ This repository contains the problems that I have created on Codeforces.
   - [Loves Cake on Codeforces](https://codeforces.com/gym/576627/problem/A)
 - [Missing](/missing/)
   - [Missing on Codeforces](https://codeforces.com/gym/576627/problem/B)
+- [Marei El Brimo](/marei-el-brimo/)
+  - [Marei El Brimo on Codeforces](https://codeforces.com/gym/576627/problem/C)

@@ -1,0 +1,31 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Marei El Brimo</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Marei El Brimo</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>$$$Marei$$$ is a watermelon seller. So he will sell $$$n$$$ different watermelons with prices $$$a_i$$$ for all $$$i$$$ $$$(1 \le i \le n)$$$.</P><P>and there are $$$q$$$ customers who come to buy from him.</P><P>Each customer will buy $$$j_{th}$$$ watermelon $$$j:(1\le j\le n)$$$, You should tell this customer what is the price he will buy his watermelon from $$$Marei$$$.</P><P>Each customer will also come with two integers $$$x$$$ and $$$y$$$ recommend $$$Marei$$$ to change $$$x_{th}$$$ watermelon's price with price $$$y$$$. As you know, $$$Marei$$$ is a greedy seller, so he can take the customer's recommended price or not.</P><P>After that, you need to tell me the amount of money that $$$Marei$$$ will earn from his&nbsp;customers.</P><P>$$$NOTE:$$$ The customer will buy first and then recommend changing another watermelon's price.</P><P>suppose for each different watermelon you have an infinite supply of it.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>First line contains $$$n-(1 \le n \le 2 \cdot 10^5)$$$- number of watermelons.</P><P>Second line contains n integers-$$$(1\le a_i \le 10^9)$$$ for all $$$i-(1\le i\le n)$$$ price for each watermelon.</P><P>Third line contains $$$q-(1 \le q \le 2 \cdot 10^5)$$$- number of customers.</P><P>For each customer, there are $$$j,x,y-(1\le j,x \le n),(1\le y \le 10^9)$$$</P><P>$$$j$$$ is the watermelon the customer will buy, $$$x$$$ is the watermelon the customer recommends changing its price and $$$y$$$ is the new price recommended for it.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each line, you should tell the customer the price of his watermelon.</P><P>And in the last line, you should tell me the amount of money that $$$Marei$$$ will earn from his&nbsp;customers.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="5
+10 4 5 12 1
+4
+1 2 15
+2 1 4
+1 3 2
+3 4 1
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">10 4 5 12 1</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2 15</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 1 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 3 2</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3 4 1</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+10
+15
+10
+5
+40
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>$$$The$$$ $$$first$$$ customer came to buy $$$ the$$$ $$$first$$$ watermelon for $$$10$$$ and recommended Marei change $$$the$$$ $$$second$$$ one's price to $$$15$$$ Marei is greedy, So he will change the $$$second$$$ one's price to $$$max(15,4)$$$</P><P>$$$The$$$ $$$second$$$ customer came to buy $$$the$$$ $$$second$$$ one so he found that $$$the$$$ $$$second$$$ one's price is $$$15$$$ and recommended changing $$$the$$$ $$$first$$$ one's price to $$$4$$$ but Marei will take $$$max(10,4)$$$.</P><P>and so on.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
