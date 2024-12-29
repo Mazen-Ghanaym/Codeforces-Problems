@@ -1,0 +1,37 @@
+\begin{problem}{LinkedIn}{standard input}{standard output}{1 second}{256 megabytes}
+
+While browsing through $LinkedIn$, $Mazen$ noticed symbols like $1st$, $2nd$, and $3rd$ next to his connections' names, but he was unsure of their significance. Curious to learn more, he decided to search and wanted to share this information with you.
+
+In $LinkedIn$, the symbols indicate different degrees of connections:
+
+$1st-degree$ -- People you're directly connected to because you have accepted their invitation to connect, or they have accepted your invitation. You'll see a $1st$ icon next to their name in search results and on their profile.
+
+$2nd-degree$ -- People who are connected to your $1st-degree$ connections. You'll see a $2nd$ icon next to their name in search results and on their profile.
+
+$3rd-degree$ -- People who are connected to your $2nd-degree$ connections or No connections in common. You'll see a $3rd$ icon next to their name in search results and on their profile.
+
+To better understand $LinkedIn$ connections, think of them as similar to real-world friendships.
+
+Let's assume $Mazen$ is user number $1$.
+
+$Mazen$ will give you $n$ number of $LinkedIn$ users and $m$ connections between them.
+He wants you to identify for $i_{th}$ user $(2 \le i \le n)$ the symbol that will appear next to his name on $Mazen's$ screen.
+
+\InputFile
+The first line contains two integers $n$ and $m$ $(2 \le n \le 2\times 10^5)$, $(0 \le m \le min(2 \times 10^5,\frac{n(n−1)}2))$ --- the number of users and the number of connections, respectively.
+
+The following $m$ lines denote connections: connection $i$ is represented by a pair of integers $v_i$, $u_i$ $(1\le v_i,u_i\le n, u_i \neq v_i)$, which are the indices of users connected by the connection.
+
+There are no multiple edges in the given graph, i. e. for each pair $(v_i,u_i)$ there are no other pairs $(v_i,u_i)$ or $(u_i,v_i)$ in the list of connections.
+
+\OutputFile
+For each user from $(2 \le i \le n)$ output \bf{``1st``} if the user in his $1st-degree$ , \bf{``2nd``} if the user in his $2nd-degree$, \bf{``3rd``} if the user in his $3rd-degree$.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\end{problem}
+

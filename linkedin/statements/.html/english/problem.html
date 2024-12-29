@@ -1,0 +1,23 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>LinkedIn</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">LinkedIn</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>While browsing through $$$LinkedIn$$$, $$$Mazen$$$ noticed symbols like $$$1st$$$, $$$2nd$$$, and $$$3rd$$$ next to his connections' names, but he was unsure of their significance. Curious to learn more, he decided to search and wanted to share this information with you.</P><P>In $$$LinkedIn$$$, the symbols indicate different degrees of connections:</P><P>$$$1st-degree$$$ &ndash; People you're directly connected to because you have accepted their invitation to connect, or they have accepted your invitation. You'll see a $$$1st$$$ icon next to their name in search results and on their profile.</P><P>$$$2nd-degree$$$ &ndash; People who are connected to your $$$1st-degree$$$ connections. You'll see a $$$2nd$$$ icon next to their name in search results and on their profile.</P><P>$$$3rd-degree$$$ &ndash; People who are connected to your $$$2nd-degree$$$ connections or No connections in common. You'll see a $$$3rd$$$ icon next to their name in search results and on their profile.</P><P>To better understand $$$LinkedIn$$$ connections, think of them as similar to real-world friendships.</P><P>Let's assume $$$Mazen$$$ is user number $$$1$$$.</P><P>$$$Mazen$$$ will give you $$$n$$$ number of $$$LinkedIn$$$ users and $$$m$$$ connections between them. He wants you to identify for $$$i_{th}$$$ user $$$(2 \le i \le n)$$$ the symbol that will appear next to his name on $$$Mazen's$$$ screen.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains two integers $$$n$$$ and $$$m$$$ $$$(2 \le n \le 2\times 10^5)$$$, $$$(0 \le m \le min(2 \times 10^5,\frac{n(n&minus;1)}2))$$$ &mdash; the number of users and the number of connections, respectively.</P><P>The following $$$m$$$ lines denote connections: connection $$$i$$$ is represented by a pair of integers $$$v_i$$$, $$$u_i$$$ $$$(1\le v_i,u_i\le n, u_i \neq v_i)$$$, which are the indices of users connected by the connection.</P><P>There are no multiple edges in the given graph, i. e. for each pair $$$(v_i,u_i)$$$ there are no other pairs $$$(v_i,u_i)$$$ or $$$(u_i,v_i)$$$ in the list of connections.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each user from $$$(2 \le i \le n)$$$ output <SPAN class="tex-font-style-bf">"1st"</SPAN> if the user in his $$$1st-degree$$$ , <SPAN class="tex-font-style-bf">"2nd"</SPAN> if the user in his $$$2nd-degree$$$, <SPAN class="tex-font-style-bf">"3rd"</SPAN> if the user in his $$$3rd-degree$$$.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+<DIV class="test-example-line test-example-line-even test-example-line-0">5 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 2</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">4 5</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+1st
+1st
+2nd
+3rd
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
