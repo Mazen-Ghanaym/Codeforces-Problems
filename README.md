@@ -8,3 +8,5 @@ This repository contains the problems that I have created on Codeforces.
 
 - [Loves Cake](/loves-cake/)
   - [Loves Cake on Codeforces](https://codeforces.com/gym/576627/problem/A)
+- [Missing](/missing/)
+  - [Missing on Codeforces](https://codeforces.com/gym/576627/problem/B)
