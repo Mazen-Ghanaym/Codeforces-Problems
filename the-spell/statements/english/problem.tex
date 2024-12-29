@@ -1,0 +1,41 @@
+\begin{problem}{The spell}{standard input}{standard output}{1 second}{256 megabytes}
+
+These Days, As you know $Mazen$ doesn't have time to make creative problems so he will give you this easy task.
+
+Initially, you have the number $1$ and you asked to get the number $n$ using these two spells:
+\begin{enumerate}
+  \item Assume you have number $x$ now. If you use the first spell, then number $x$
+ becomes $2x+1$.
+  \item Assume you have number $x$ now. If you use the second spell, then number $x$
+ becomes $2x$.
+\end{enumerate}
+Construct a sequence of spells, so you get the number $n$ after using them in order.
+
+\InputFile
+The first line contains a single integer $t$ $(1≤t≤10^4)$ --- the number of test cases.
+
+Each test case contains one line with a single integer $n$ $(2≤n≤10^9)$ --- the required final number.
+
+\OutputFile
+For each test case, output the following.
+
+In the first line print an integer $m$ representing the total number of spells you use.
+In the second print $m$ integers $a_1,a_2,\ldots,a_m$
+ ($a_i$ is $1$ or $2$) separated by spaces, where $a_i=1$
+ means that you use the first spell in the $i$
+-th step, while $a_i=2$
+ means that you use the second spell in the $i$
+-th step.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+For the first test case initially, you have the number $1$ first you can use the second spell
+as follow $2 \times 1 = 2$ you get $2$ and use the first spell as follow $2 \times 2 + 1 = 5$ you get the required number.
+
+\end{problem}
+

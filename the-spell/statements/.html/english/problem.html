@@ -1,0 +1,32 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>The spell</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">The spell</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>These Days, As you know $$$Mazen$$$ doesn't have time to make creative problems so he will give you this easy task.</P><P>Initially, you have the number $$$1$$$ and you asked to get the number $$$n$$$ using these two spells: </P><OL> <LI> Assume you have number $$$x$$$ now. If you use the first spell, then number $$$x$$$ becomes $$$2x+1$$$. </LI><LI> Assume you have number $$$x$$$ now. If you use the second spell, then number $$$x$$$ becomes $$$2x$$$. </LI></OL> Construct a sequence of spells, so you get the number $$$n$$$ after using them in order.</DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains a single integer $$$t$$$ $$$(1&le;t&le;10^4)$$$ &mdash; the number of test cases.</P><P>Each test case contains one line with a single integer $$$n$$$ $$$(2&le;n&le;10^9)$$$ &mdash; the required final number.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>For each test case, output the following.</P><P>In the first line print an integer $$$m$$$ representing the total number of spells you use. In the second print $$$m$$$ integers $$$a_1,a_2,\ldots,a_m$$$ ($$$a_i$$$ is $$$1$$$ or $$$2$$$) separated by spaces, where $$$a_i=1$$$ means that you use the first spell in the $$$i$$$ -th step, while $$$a_i=2$$$ means that you use the second spell in the $$$i$$$ -th step.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="4
+5
+7
+12
+17
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">4</DIV><DIV class="test-example-line test-example-line-odd test-example-line-1">5</DIV><DIV class="test-example-line test-example-line-even test-example-line-2">7</DIV><DIV class="test-example-line test-example-line-odd test-example-line-3">12</DIV><DIV class="test-example-line test-example-line-even test-example-line-4">17</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+2
+2 1 
+2
+1 1 
+3
+1 2 2 
+4
+2 2 2 1 
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>For the first test case initially, you have the number $$$1$$$ first you can use the second spell as follow $$$2 \times 1 = 2$$$ you get $$$2$$$ and use the first spell as follow $$$2 \times 2 + 1 = 5$$$ you get the required number.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
