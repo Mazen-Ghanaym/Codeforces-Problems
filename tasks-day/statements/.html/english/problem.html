@@ -1,0 +1,33 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Tasks Day</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Tasks Day</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>Every weekend, $$$Mazen$$$ makes a day called $$$Tasks$$$ $$$Day$$$.</P><P>On this day, $$$Mazen$$$ gives his friends a number of tasks to solve. $$$Mazen$$$ has an assistant that collects the progress of solving tasks in the form of <TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">friend's name</SPAN></TD><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">task name</SPAN></TD><TD></TD><TD><SPAN class="tex-font-style-bf">time taken to solve</SPAN></TD></TR></TBODY></TABLE> example: <TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">Hamza</SPAN></TD><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">A</SPAN></TD><TD></TD><TD><SPAN class="tex-font-style-bf">40</SPAN></TD></TR></TBODY></TABLE></P><P>After collecting the list, $$$Mazen$$$ comes to see it, but he becomes angry because he needs it to be sorted as follows:</P><P>First, sort by the number of solved tasks, the friend with the greater number comes first.</P><P>If two friends have an equal number of solved tasks then the friend with less <SPAN class="tex-font-size-huge-1">total</SPAN> time taken to solve comes first. </P><P>If two friends have an equal number of solved tasks and total time taken then the friend with the lexicographical smaller name comes first.</P><P>can you help the assistant to sort the list.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>The first line contains $$$n$$$ &ndash; $$$(1\le n \le 10^5)$$$&nbsp;&ndash; the number of items in the list. </P><P>next $$$n$$$ line contains item details as follows: <TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">friend's name</SPAN></TD><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">task name</SPAN></TD><TD></TD><TD><SPAN class="tex-font-style-bf">time taken to solve</SPAN></TD></TR></TBODY></TABLE></P><P>Friend name will be a string that has at most $$$10$$$ upper and lower case English letters.</P><P>task name will be an uppercase English character.</P><P>time taken in minutes $$$(1\le time \le 3000)$$$.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>output the list after sorting it in the form of <TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">friend's name</SPAN></TD><TD class="tex-tabular-text-align-left"><SPAN class="tex-font-style-bf">number of solved tasks</SPAN></TD><TD></TD><TD><SPAN class="tex-font-style-bf">total time taken to solve</SPAN></TD></TR></TBODY></TABLE></P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="8
+Hamza A 30
+Mahmoud A 20
+Islam C 25
+Hamza B 12
+Mohamed C 15
+Mazen A 20
+Islam A 20
+Hamza C 28
+">
+<DIV class="test-example-line test-example-line-even test-example-line-1">8</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Hamza A 30</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Mahmoud A 20</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Islam C 25</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Hamza B 12</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Mohamed C 15</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Mazen A 20</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Islam A 20</DIV><DIV class="test-example-line test-example-line-even test-example-line-1">Hamza C 28</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+Hamza 3 70
+Islam 2 45
+Mohamed 1 15
+Mahmoud 1 20
+Mazen 1 20
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>$$$Hamza$$$ comes first because he solved 3 tasks and $$$Islam$$$ second because he solved 2 tasks. but you can see $$$Mohamed$$$, $$$Mahmoud$$$ and $$$Mazen$$$ have the same number of solved tasks but $$$Mohamed$$$ comes first because he has the least total time taken to solve after that $$$Mahmoud$$$ and $$$Mazen$$$ have the same number of solved tasks, and same total time but $$$Mahmoud$$$ comes first because his name is lexicographically smaller than $$$Mazen$$$. </P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
