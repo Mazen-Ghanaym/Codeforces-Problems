@@ -1,6 +1,13 @@
 # Codeforces-Problems
 
-This repository contains the problems that I have created on Codeforces.
+This repository contains the problems that I have created on [Polygon Codeforces](https://polygon.codeforces.com/) during my journey as a volunteer at [@icpc-scu-community](https://github.com/icpc-scu-community).
+
+These problems are created for:
+
+- Training Contests (e.g. NewComers, Level 1 and Level 2)
+- Global Contests (e.g. ICPC SCU Global Contest)
+- Challenges (e.g. Ramadan Challenge)
+- Competitions (e.g. ECPC, ACPC)
 
 ## [Invitaion for Public Mashup](https://codeforces.com/contestInvitation/b8df4e12d2a6fc3eddb1ba96495f546c4fe2ef6e)
 
@@ -52,3 +59,6 @@ This repository contains the problems that I have created on Codeforces.
   - [New Lesson on Codeforces](https://codeforces.com/gym/576627/problem/V)
 - [Equal Strings](/Packages/equal-strings-easy)
   - [Equal Strings on Codeforces](https://codeforces.com/gym/576627/problem/W)
+
+> [!NOTE]
+> These are not the only problems that i have created there are others    confidential for Competitions Like ECPC, ACPC, and future competitions.
