@@ -61,4 +61,4 @@ These problems are created for:
   - [Equal Strings on Codeforces](https://codeforces.com/gym/576627/problem/W)
 
 > [!NOTE]
-> These are not the only problems that i have created there are others    confidential for Competitions Like ECPC, ACPC, and future competitions.
+> These are not the only problems I have created. There are additional problems that remain confidential for competitions such as ECPC, ACPC, and other future contests.
